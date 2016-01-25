@@ -1,0 +1,18 @@
+p.aviso --> parrafos que son de la clase aviso
+p, .aviso --> todos los p y aviso
+*.aviso --> todos los avisos, el asterisco no influye
+
+p#aviso --> p con identificador aviso
+p #aviso --> los avisos que descienden de p
+p, #aviso --> loas avisos o los p
+*#aviso --> todos los aviso
+IMPORTANTE --> el unico que tiene sentido es el p, #aviso
+
+.aviso .especial --> los clases especial dentro de los clase aviso.
+div.aviso span.especial --> span de clase especial que esten dentro de un div de clase aviso
+
+--------------------------------------------------------------------------------------------
+
+Modulos de una pagina --> html(creo DOM), HTTP, CSS(anoto DOM), javascript, bibliotecas que usa javascript y una APP(min codigo posible) que usa todo.
+
+
