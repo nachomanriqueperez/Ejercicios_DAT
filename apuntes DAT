@@ -15,4 +15,50 @@ div.aviso span.especial --> span de clase especial que esten dentro de un div de
 
 Modulos de una pagina --> html(creo DOM), HTTP, CSS(anoto DOM), javascript, bibliotecas que usa javascript y una APP(min codigo posible) que usa todo.
 
+Herramienta servidor --> python -m SimpleHTTPServer
+
+5.2.2(DONE)
+
+
+<html><head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <style type="text/css" media="screen">
+       body{
+         padding:0;
+         margin:50px auto;
+         text-align:center;
+         font:100% Verdana;
+       }
+       h1 {
+         font-size: 1.5em;
+       }
+       #sentence {
+         font-size: 4em;
+       }
+       #another {
+         font-size: 2em;
+       }
+       footer {
+         font-size: 0.75em;
+       }
+     </style>
+     <title>Stupid sentence</title>
+   </head>
+   <body>
+     <h1>Stupid sentences</h1>
+     <p>Current stupid sentence:</p>
+     <p id="sentence">The car smells like a cat</p>
+<p id="sentence2">ALEX ES UN PRO DE LA BIDAH!</p>
+<img src="https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-19/11356969_1619357335007626_1787110263_a.jpg">
+     <p id="another">Another one: A cat works since Monday</p>
+     <footer>
+       <p>Stupid example...</p>
+     </footer>
+   
+
+</body><style type="text/css"></style></html>
+
+ y 5.2.3
+
+
 
