@@ -1,0 +1,52 @@
+body{
+  background-color: blue;
+}
+
+div#sandbox{
+   font-family:“goudy-bookletter-1911-1”, “goudy-bookletter-1911-2”, “Baskerville”,
+“Georgia”, serif;
+   font-size:16px;
+   color:black;
+   
+   width:440px;
+   
+   background-color:rgba(180, 180, 144,0.6);
+   
+   border-width: 1px; 
+   border-color: #211111;
+   border-style: solid;
+   
+   margin:40px 0px 0px 30px;/* Posicion de la caja en la pagina */
+   padding: 20px; /* Espacio de las letras al borde de la caja */
+   z-index:2; /* es como las capas del photoshop */
+   overflow:hidden;/* Si sobran palabras en la caja las oculta(scroll nos permite bajar con una barra) */
+   
+   border-radius: 15px 15px 15px 15px;
+   box-shadow: 0px 0px 20px #FFFFFF;
+   
+}
+
+abbr{
+  font-size:130%;
+  color:#ff2166;
+  border-bottom: thin dashed #888;
+  cursor:help;
+  text-shadow: 15px 15px 1px #333; /*Donde valorX indica el tamaño o desplazamiento de la sombra respecto al texto hacia la derecha (valores positivos) o hacia la izquierda (valores negativos), expresado con una unidad de medida válida en CSS.
+
+ValorY indica el tamaño o desplazamiento de la sombra respecto al texto hacia abajo (valores positivos) o hacia arriba (valores negativos), expresado con una unidad de medida válida en CSS.
+
+blur es un parámetro opcional que indica un efecto de desenfoque o difuminado de la sombra, expresado con una unidad de medida válida en CSS. A mayor valor, la sombra tiene un mayor difuminado y se vuelve más clara y brillante.*/
+}
+
+header{
+  font-size:56px;
+  margin:0px 0px 20px 0px;
+  word-spacing: 2px;
+}
+
+p{
+  font-size:30px;
+  line-height: 50px;
+  margin: 0px 0px 0px 0px;
+  width:auto;
+}
