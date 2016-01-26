@@ -1,0 +1,74 @@
+body{
+  background-color: blue;
+}
+
+div#sandbox{
+   font-family:“goudy-bookletter-1911-1”, “goudy-bookletter-1911-2”, “Baskerville”,
+“Georgia”, serif;
+   font-size:16px;
+   color:rgba(0,0,0,0);
+   
+   width:440px;
+
+   background:linear-gradient(to bottom, #444444, #999999); /*degrada un color al otro de arriba a abajo de forma lineal*/
+   
+   border-width: 1px; 
+   border-color: rgba(21,11,11, 0.2);
+   border-style: solid;
+   
+   margin:40px 0px 0px 30px;/* Posicion de la caja en la pagina */
+   padding: 20px; /* Espacio de las letras al borde de la caja */
+   z-index:2; /* es como las capas del photoshop */
+   overflow:hidden;/* Si sobran palabras en la caja las oculta(scroll nos permite bajar con una barra) */
+   
+   border-radius: 15px 15px 15px 15px;
+   box-shadow: 0px 0px 20px #FFFFFF;
+
+   animation: 5s opacidad;
+   animation-fill-mode: forwards;
+   
+}
+
+@keyframes opacidad{
+  50% {
+	color: rgba(0,0,0,0,5);
+  }
+  100%{
+	color: rgba(0,0,0,1);
+  }
+}
+
+abbr{
+  font-size:130%;
+  color:rgba(0,0,0,0);
+  
+  animation: 5s opacidadabbr;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opacidadabbr{
+  50% {
+	color: rgba(127,16,51,0,5);
+        text-shadow: 15px 15px 1px #333;
+        border-bottom: thin dashed #888;
+  }
+  100%{
+	color: rgba(255,33,102,1);
+	text-shadow: 15px 15px 1px #333;
+        border-bottom: thin dashed #888;
+        cursor:help;
+  }
+}
+
+header{
+  font-size:56px;
+  margin:0px 0px 20px 0px;
+  word-spacing: 2px;
+}
+
+p{
+  font-size:30px;
+  line-height: 50px;
+  margin: 0px 0px 0px 0px;
+  width:auto;
+}
