@@ -63,7 +63,21 @@ Herramienta servidor --> python -m SimpleHTTPServer
 
 ------------------------------------------------------------------------------------------------------------------
 
-26/1/16
+1/2/16
+
+Javascript :
+j=i   asigna
+j==i  compara valores
+j===i compara objetos, es decir, tiene que ser exactamente el mismo objeto.
+
+Podemos llamar por referencia a distintas funciones anonimas usandolas donde esten referenciadas:
+var f = function(,){...}
+llamando a f obtenemos la funcion, no es lo mismo que funcion pintar(,){...} y llamar a pintar().
+Si uso llama (funcion(){...}) asi --> llama () , primero evalua la funcion dentro de llama y luego utiliza el valor, si esa funcion devuelve un entero, no podriamos hacer llama()
+y usarla de una forma que no sea un entero.
+Si no termina en un parentesis quiere decir que nos esta devolviendo una funcion.
+
+Usar typeof para mirar el tipo de lo que sea.
 
 
 
