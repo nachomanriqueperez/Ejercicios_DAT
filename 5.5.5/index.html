@@ -1,0 +1,23 @@
+<html>
+	<head>
+ 		<title>Ejercicio 5.5.5</title>
+ 	</head>
+	 <body>
+	 	<p>Adder...<span id='op'>5+3</span><span id='res'></span>
+  		<span id="res"></span> <a href="javascript:sumar()">Add!</a></p>
+  		<script type="text/javascript" charset="utf-8">
+		   	function changer (id, newValue) {
+            	var element = document.getElementById(id);
+				console.log(element);
+		    	element.innerHTML = newValue;
+		    };
+
+			function sumar(){
+				var operation = document.getElementById("op");
+				var operands = operation.innerHTML.split ("+");
+				var result = parseInt(operands[0]) + parseInt(operands[1]);
+				changer ("res",'=' + result);
+			};
+     	</script>
+	</body>
+</html>

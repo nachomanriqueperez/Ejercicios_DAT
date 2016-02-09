@@ -1,0 +1,32 @@
+<html>
+	<head>
+ 		<title>Ejercicio 5.5.6</title>
+ 	</head>
+	 <body>
+	 	<p>Vamos a hacer sumas!: <span id='op'></span><span id='res'></span>
+  		<span id="res"></span> <a href="javascript:sumar()">Suma!</a></p>
+		<p id="another"><a href="javascript:document.location.reload()">Otra suma mas!</a></p>
+  		<script type="text/javascript" charset="utf-8">
+
+		   	function changer (id, newValue) {
+            	var element = document.getElementById(id);
+				console.log(newValue);
+		    	element.innerHTML = newValue;
+		    };
+
+			function sumar(){
+				var operation = document.getElementById("op");
+				var operands = operation.innerHTML.split ("+");
+				var result = parseInt(operands[0]) + parseInt(operands[1]);
+				changer ("res",'=' + result);
+			};
+
+			oprand1 = Math.round(Math.random()*1000)
+			oprand2 = Math.round(Math.random()*1000)
+			console.log(oprand1);
+			console.log(oprand2);
+			changer("op",oprand1 + "+" + oprand2);
+
+     	</script>
+	</body>
+</html>
