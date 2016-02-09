@@ -79,6 +79,20 @@ Si no termina en un parentesis quiere decir que nos esta devolviendo una funcion
 
 Usar typeof para mirar el tipo de lo que sea.
 
+-----------------------------------------------------------------------------------------------------------------
+
+8/2/16
+
+Siempre que nos referimos a "document" nos referimos al arbol DOM
+Ejercicio 5.5.2:
+
+Por ejemplo cargar gsyc.es y ejecutar:
+
+p = document.getElementsByTagName(’body’);
+p[0].innerHTML=’’;  (Coge el primer elemento del array, si es body solo deberia de haber 1, e iguala a nada todo lo que hay dentro de body)
+
+
+
 
 
 
