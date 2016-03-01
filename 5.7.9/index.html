@@ -1,0 +1,62 @@
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<head>
+ 		<title>Ejercicio 5.7.9</title>
+ 	</head>
+	 <body>
+	 	<p>Comprobemos si su dispositivo es compatible con: </p>
+                <p id='canvas'></p>
+                <p id='video'></p>
+                <p id='videoogg'></p>
+                <p id='storage'></p>
+                <p id='geo'></p>
+                <p id='cache'></p>
+	</body>
+	<script type="text/javascript" charset="utf-8">
+                function compatible(elem,frase){
+                        writeElement = document.getElementById(elem);
+                        writeElement.innerHTML = frase;
+                }
+                if (Modernizr.canvas) {
+                        compatible("canvas","Compatible con el canvas.")
+
+                } else {
+                        compatible("canvas","NO compatible con el canvas.")
+                };
+
+                if (Modernizr.video) {
+                        compatible("video","Compatible con el video.")
+
+                } else {
+                        compatible("video","NO compatible con el video.")
+                };
+
+                if (Modernizr.video.ogg) {
+                        compatible("videoogg","Compatible con el video formato ogg.")
+
+                } else {
+                        compatible("videoogg","NO compatible con el video formato .ogg.")
+                };
+
+                if (Modernizr.localstorage) {
+                        compatible("storage","Compatible con almacenamiento local.")
+
+                } else {
+                        compatible("storage","NO compatible con almacenamiento local.")
+                };
+
+                if (Modernizr.geolocation) {
+                        compatible("geo","Compatible con geolocalizacion.")
+
+                } else {
+                        compatible("geo","NO compatible con geolocalizacion.")
+                };
+
+                if (Modernizr.applicationcache) {
+                        compatible("cache","Compatible con aplicaciones offline.")
+
+                } else {
+                        compatible("cache","NO compatible con aplicaciones offline.")
+                };
+        </script>
+</html>
