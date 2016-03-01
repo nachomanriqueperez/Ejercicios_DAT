@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+     <script type="text/javascript" charset="utf-8">
+           function setup (){
+             formElement = document.getElementById('text');
+             writeElement = document.getElementById('write');
+             formElement.addEventListener('input',duplicar);
+             console.log(formElement);
+           }
+           function duplicar() {
+               writeElement.innerHTML = formElement.value;
+           }
+     </script>
+
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Duplicator</title>
+   </head>
+   <body onload="setup()">
+     <form>
+       Duplicar texto: <input type="text" id="text"/>
+     </form>
+     <p id="write"></p>
+   </body>
+</html>

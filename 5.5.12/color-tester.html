@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Duplicator</title>
+   </head>
+   <body>
+     <form>
+       Duplicar texto: <input type="text" id="text" name="color" onkeypress="if (event.keyCode == 13) enviar_formulario()"/>
+     </form>
+     <table width="220" border="0" cellspacing="0" cellpadding="1">
+          <tr bgcolor="blue" align="center">
+              <td><b><font color="#FFFFFF">Titular del cuadro</font></b></td>
+          </tr>
+          <tr bgcolor="red">
+              <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                  <tr bgcolor="#FFFFFF">
+              <td>Ponga aqui el contenido del cuadro</td>
+          </tr>
+     </table>
+     <p id="write"></p>
+
+     <script type="text/javascript" charset="utf-8">
+
+       formElement = document.getElementById('text');
+       writeElement = document.getElementById('write');
+       var color_hex = "";
+       formElement.addEventListener("input", function(e) {
+          writeElement.innerHTML = this.value;
+       });
+       function enviar_formulario(){
+           console.log(color_hex);
+       }
+     </script>
+   </body>
+</html>
