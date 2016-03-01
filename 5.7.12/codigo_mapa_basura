@@ -1,0 +1,54 @@
+if (navigator.geolocation){navigator.geolocation.getCurrentPosition(function(objPosition){
+							var lon = objPosition.coords.longitude;
+							var lat = objPosition.coords.latitude;
+
+							content.innerHTML = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>";
+						}, function(objPositionError){
+								switch (objPositionError.code){
+									case objPositionError.PERMISSION_DENIED:
+										content.innerHTML = "No se ha permitido el acceso a la posición del usuario.";
+									break;
+									case objPositionError.POSITION_UNAVAILABLE:
+										content.innerHTML = "No se ha podido acceder a la información de su posición.";
+									break;
+									case objPositionError.TIMEOUT:
+										content.innerHTML = "El servicio ha tardado demasiado tiempo en responder.";
+									break;
+									default:
+										content.innerHTML = "Error desconocido.";
+								}
+							}, {
+								maximumAge: 75000,
+								timeout: 15000
+							});
+						}
+var content = document.getElementById("geolocation-test");
+
+
+<div class="info_block_form" float = "right">
+		            <form name="load_location" class="forms" onsubmit="dispatch_form(); return false;">
+		                <h4>Ingresar Coordenadas</h4>
+		                <div class="row"><span id="load_lat_span"><span class="label">Latitud:</span><span class="value"><input class="text" type="text" name="lat" maxlength="50"></span></span></div>
+		                <div class="row"><span id="load_lon_span"><span class="label">Longitud:</span><span class="value"><input class="text" type="text" name="lon" maxlength="50"></span></span></div>
+		                <div class="row"><span id="load_lon_span2"><span class="label"></span><span class="value"><input name="yo" onclick="dispatch_form();" type="button" value="Enviar coordenadas"></span></span></div>
+		   </div>
+
+
+
+lat: 40.2902056, lng: -3.8035477
+
+
+		<script>
+			var x = document.getElementById("demo");
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					x.innerHTML = "Geolocation is not supported by this browser.";
+				}
+			}
+			function showPosition(position) {
+				x.innerHTML = "Latitude: " + position.coords.latitude + 
+				"<br>Longitude: " + position.coords.longitude; 
+			}
+		</script>
