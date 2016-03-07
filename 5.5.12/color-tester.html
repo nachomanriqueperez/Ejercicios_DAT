@@ -2,21 +2,15 @@
 <html>
    <head>
      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-     <title>Duplicator</title>
+     <title>Duplicador</title>
    </head>
    <body>
      <form>
-       Duplicar texto: <input type="text" id="text" name="color" onkeypress="if (event.keyCode == 13) enviar_formulario()"/>
+       Color de la caja: <input type="text" id="text"/>
      </form>
-     <table width="220" border="0" cellspacing="0" cellpadding="1">
-          <tr bgcolor="blue" align="center">
-              <td><b><font color="#FFFFFF">Titular del cuadro</font></b></td>
-          </tr>
-          <tr bgcolor="red">
-              <td>
-                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
-                  <tr bgcolor="#FFFFFF">
-              <td>Ponga aqui el contenido del cuadro</td>
+     <table style='float: left; padding: 12px;'>
+          <tr id="color" bgcolor="blue" align="center">
+              <td><b><font color="#FFFFFF">COLOR DEL CUADRO</font></b></td>
           </tr>
      </table>
      <p id="write"></p>
@@ -24,14 +18,11 @@
      <script type="text/javascript" charset="utf-8">
 
        formElement = document.getElementById('text');
-       writeElement = document.getElementById('write');
-       var color_hex = "";
+       writeElement = document.getElementById('color');
+       
        formElement.addEventListener("input", function(e) {
-          writeElement.innerHTML = this.value;
+          writeElement.style.backgroundColor = this.value;
        });
-       function enviar_formulario(){
-           console.log(color_hex);
-       }
      </script>
    </body>
 </html>
